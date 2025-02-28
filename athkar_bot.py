@@ -3,11 +3,7 @@ import logging
 import threading
 import time
 import random
-from dotenv import load_dotenv
 import os
-
-# Load environment variables
-load_dotenv()
 
 # Get the bot token from .env
 BOT_TOKEN = os.getenv("ATHKAR_TOKEN")
