@@ -4,7 +4,6 @@ import threading
 import time
 import random
 import os
-import google.generativeai as genai
 import datetime
 
 
@@ -144,8 +143,7 @@ DEFAULT_ATHKAR_LIST = [
 ]
 
 athkar_list = DEFAULT_ATHKAR_LIST.copy()
-GEMINI_API_KEY = os.getenv("GEMINI_API")
-genai.configure(api_key=GEMINI_API_KEY)
+
 
 # Store user Quran reading plans and timers
 user_werd_settings = {}
